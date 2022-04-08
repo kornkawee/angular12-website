@@ -1,0 +1,14 @@
+.navbar{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+/* Link Active เมื่อกด Link */
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: underline;
+}

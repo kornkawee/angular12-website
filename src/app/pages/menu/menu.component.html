@@ -1,0 +1,13 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let item of footDeta ">
+            <div class="foodbox my-3">
+                <img src="{{item.foodImg}}" class="img-fluid">
+                <h1>{{item.foodName}}</h1>
+                <p>{{item.foodPrice | currency:'฿'}}</p>
+                <!-- [ไปยังหน้า+ส่งค่าidที่กด] menu/:id = /menu',item.id -->
+                <a class="buyBtn " [routerLink]="['/menu',item.id]">Buy Now &nbsp; <i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
