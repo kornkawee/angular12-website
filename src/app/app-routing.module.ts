@@ -7,15 +7,16 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
-  {path:'menu',component:MenuComponent},
-  {path:'menu/:id',component:MenupageComponent},
-  {path:'about',component:AboutComponent},
-  {path:'contact',component:ContactComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'menu', component: MenuComponent },
+  { path: 'menu/:id', component: MenupageComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
